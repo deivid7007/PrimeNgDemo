@@ -1,0 +1,98 @@
+/* Wrapper */
+
+.wrapper {
+    margin: 20px;
+}
+
+/* Navigation Button */
+
+.nav-icon-button {
+    /* Overrides for Prime NG styles */
+    background-color: rgb(238, 234, 234) !important;
+    border-color: rgb(238, 234, 234) !important;
+    color: rgb(87, 87, 87) !important;
+    border-radius: 20px !important;
+
+    /* Some other styling */
+
+    width: 50px;
+    height: 50px;
+}
+
+::ng-deep .nav-icon-button .pi {
+    /* Overrides for Prime NG styles */
+    font-size: 20px !important;
+}
+
+/* Static Card */
+
+::ng-deep .card .p-card {
+    /* Overrides for Prime NG styles */
+    background-color: rgb(238, 234, 234) !important;
+    border-color: rgb(238, 234, 234) !important;
+    color: rgb(87, 87, 87) !important;
+    border-radius: 20px !important;
+
+    /* Some other styling */
+
+    width: 150px;
+    height: 150px;
+}
+
+::ng-deep .card .pi {
+    /* Overrides for Prime NG styles */
+    font-size: 20px !important;
+    margin: 15px;
+}
+
+::ng-deep .card .p-card-footer {
+    /* Overrides for Prime NG styles */
+    margin-top: 10px;
+}
+
+/* Toggle button */
+
+::ng-deep .toggle-button .p-togglebutton {
+    /* Overrides for Prime NG styles */
+    background-color: rgb(238, 234, 234) !important;
+    border-color: rgb(238, 234, 234) !important;
+    color: rgb(87, 87, 87) !important;
+    border-radius: 20px !important;
+
+    /* Some other styling */
+    width: 150px;
+    height: 150px;
+}
+
+::ng-deep .toggle-button .p-togglebutton.p-button.p-highlight .p-button-icon-left {
+    padding-bottom: 100px !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+}
+
+::ng-deep .toggle-button .p-togglebutton.p-button.p-highlight .p-button-label {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+}
+
+::ng-deep .toggle-button .p-togglebutton.p-button.p-highlight {
+    background: rgb(255, 208, 121) !important;
+}
+
+::ng-deep .toggle-button .p-togglebutton.p-button .p-button-icon-left {
+    padding-bottom: 100px !important;
+    color: rgb(87, 87, 87) !important;
+}
+
+::ng-deep .toggle-button .p-togglebutton .p-button-label {
+    padding-top: 100px !important;
+    color: rgb(87, 87, 87) !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Switch */
+
+::ng-deep .switch .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: rgb(255, 208, 121) !important;
+}

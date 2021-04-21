@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h1>Some examples by prime ng</h1>
+
+  <h2>Navigation buttons from Mock (clickable)</h2>
+  <button aria-label="shoping-cart-navigation-menu" pButton icon="pi pi-shopping-cart" class="nav-icon-button"></button>
+
+  <h2>If the card is static from Mock (static)</h2>
+  <p-card class="card">
+    <ng-template pTemplate="header">
+      <i class="pi pi-wifi"></i>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      Internet
+    </ng-template>
+  </p-card>
+
+
+  <h2>If the card is actually a toggle button from Mock (clickable)</h2>
+  <p-toggleButton [attr.aria-roledescription]="currentLang.ToggleButton" [(ngModel)]="checkedWifi" onLabel="On" offLabel="Off" onIcon="pi pi-wifi" offIcon="pi pi-wifi"
+    class="toggle-button"></p-toggleButton>
+
+  <h2>Switch from Mock (clickable)</h2>
+  <p-inputSwitch aria-label="switch-toggle" [(ngModel)]="checkedSwitch" class="switch"></p-inputSwitch>
+</div>
