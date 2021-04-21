@@ -14,11 +14,11 @@
     </ng-template>
   </p-card>
 
-
-  <h2>If the card is actually a toggle button from Mock (clickable)</h2>
-  <p-toggleButton [attr.aria-roledescription]="currentLang.ToggleButton" [(ngModel)]="checkedWifi" onLabel="On" offLabel="Off" onIcon="pi pi-wifi" offIcon="pi pi-wifi"
-    class="toggle-button"></p-toggleButton>
-
+  <div #toggleButtonDiv>
+    <div id="toggle-button-heading">If the card is actually a toggle button from Mock (clickable)</div>
+    <p-toggleButton [(ngModel)]="checkedWifi" onLabel="On" offLabel="Off" onIcon="pi pi-wifi" offIcon="pi pi-wifi"
+      class="toggle-button"></p-toggleButton>
+  </div>
   <h2>Switch from Mock (clickable)</h2>
-  <p-inputSwitch aria-label="switch-toggle" [(ngModel)]="checkedSwitch" class="switch"></p-inputSwitch>
+  <p-inputSwitch title="switch" [(ngModel)]="checkedSwitch" class="switch"></p-inputSwitch>
 </div>

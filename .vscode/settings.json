@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/397b36b4-e736-48f2-98e8-54109970d1dd/resourceGroups/zaya-app-cognitive-test/providers/Microsoft.Web/sites/accessibility-zaya-app-test",
+    "appService.deploySubpath": "dist\\prime-ng-demo"
+}
