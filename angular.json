@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/saga-blue/theme.css",
@@ -122,6 +123,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "prime-ng-demo"
 }

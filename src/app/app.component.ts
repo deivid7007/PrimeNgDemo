@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as en from '../assets/lang/lang-en.json'
 import * as de from '../assets/lang/lang-de.json'
+import { PrimeNgAriaService } from './prime-ng-aria.service';
+import { AttributeModel } from './attribute.model';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +16,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   currentLang: any;
   @ViewChild('toggleButtonDiv') private toggleButtonRef: ElementRef<HTMLElement>;
 
+  constructor(private ariaService: PrimeNgAriaService) { }
+
   ngAfterViewInit() {
-    console.log(this.toggleButtonRef);
-    const parentElement = this.toggleButtonRef.nativeElement;
-    console.log(parentElement);
-    const firstChild = parentElement.children[0];
-    const firstImage = parentElement.querySelector("p-togglebutton div");
-    firstImage.setAttribute('aria-label', 'wifi-toggle-button');
-    console.log(firstImage);
+    let ariaLabel = { key: "aria-label", value: "wifi toggle button" } as AttributeModel;
+    this.ariaService.toggleButtonAttributesSet("toggle-button-div", [ariaLabel]);
   }
 
   ngOnInit() {
